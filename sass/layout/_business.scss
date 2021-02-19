@@ -1,0 +1,30 @@
+.business {
+	margin-top: 50px;
+	padding-bottom: 94px;
+	
+}
+.business-list p {
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(47, 48, 58, 0.8);
+	height: 70px;
+    color: $accent-color;
+    
+}
+
+
+.business-list li{
+    position: relative;
+}
+
+.business-list {
+	display: flex;
+	justify-content: center;
+	margin: 0px auto;
+	
+}
+.business-list li:not(:last-child){
+	margin-right: 30px;
+}

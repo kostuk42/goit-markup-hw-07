@@ -2,7 +2,7 @@
 /* определение переменных */
 
 :root {
-	--font-description-item-color: #757575;
+	--font-description-item-color: #757575; 
 	--font-heading-color: #212121;
 	--accent-color: #ffffff;
 	--background-footer-hero-color: #2f303a;
@@ -369,20 +369,13 @@ nav li:not(:first-child) {
 	display:flex;
 	align-items: center;
 }
+.contacts:hover,
+.contacts:focus {
+	color: var(--hover-web-color);
+	fill: var(--hover-web-color);
 
 /* ============== ЛОГОТИП ==============*/
-.logo {
-	font-family: 'Raleway', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 1.2;
-	color: var(--font-heading-color);
-}
 
-.logo span {
-	color: var(--hover-web-color);
-}
 
 .icon-mail {
 	width: 12px;
@@ -395,6 +388,11 @@ nav li:not(:first-child) {
 	height: 16px;
 	margin-right: 10px;
 	fill: currentColor;
+}
+
+header a:hover,
+header a:focus {
+	color: var(--hover-web-color);
 }
 
 /* ======================== FOOTER ======================== */
@@ -483,85 +481,25 @@ address {
 	margin-left: 10px;
 	fill: currentColor;
 }
-
-
-/* ========== HOVER AND FOCUS ============= */
-
-header a:hover,
-header a:focus {
-	color: var(--hover-web-color);
-}
-/* соц сети в команде */
-.team-item a:hover,  
-.team-item a:focus {
-	background-color: var(--hover-web-color);
-	color: var(--accent-color);
- }
-/* кнопки фильтра в портфолио */
-.filter-btn:hover,
-.filter-btn:focus {
-	background-color: var(--hover-web-color);
-	color: var(--accent-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-/* фото работ в портфолио */
-.photo-work a:hover,
-.photo-work a:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-}
-.photo-work a:hover .overlay,
-.photo-work a:focus .overlay {
-	transform: translateY(0);
-} 
 /* соц сети в футере */
 .social-link-footer:hover,
 .social-link-footer:focus {
 	background: #2196F3;
 	color: var(--accent-color);
 }
-/* лого клиентов */
-.customers-item a:hover,
-.customers-item a:focus {
-	color: var(--hover-web-color);
-	
-}
-.contacts:hover,
-.contacts:focus {
-	color: var(--hover-web-color);
-	fill: var(--hover-web-color);
-}
-.contact-form input:focus,
-.contact-form textarea:focus
- {
-     border: 1px solid var(--hover-web-color);
-	 outline: none; 
-	
-}
-.contact-form input:focus + span {
-     color: var(--hover-web-color);
-	 outline: none;
-	 
-}
 
-.icon-contact-form-wrap {
-	color: var(--font-heading-color);
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	fill: currentColor;
-}
 
-.contact-form-btn:hover,
-.contact-form-btn:focus {
-	background-color:  #188CE8;
-}
-.confirm:checked + .confirmation::before{
-	background-image: url("../img/icon-confirmed.svg");
-	background-color: var(--hover-web-color);
-}
+/* ========== HOVER AND FOCUS ============= */
 
-.modal-close-btn:hover {
-	color :var(--hover-web-color);
-	fill: currentColor;
-}
+
+
+
+
+
+
+
+
+
 
 /* =========== social links icons ======= */
 
@@ -590,6 +528,13 @@ header a:focus {
 	color: #AFB1B8;
 }
 
+/* соц сети в команде */
+.team-item a:hover,  
+.team-item a:focus {
+	background-color: var(--hover-web-color);
+	color: var(--accent-color);
+ }
+
 
 
 
@@ -597,7 +542,7 @@ header a:focus {
 /* ========== HERO ============= */
 
 .hero {
-	/* background-color: var(--background-footer-hero-color); */
+	
 	max-width: 1600px;
 	min-height: 600px;
 	margin-left: auto;
@@ -627,19 +572,18 @@ header a:focus {
 
 .order-btn {
 
-	display: inline-block;
+	/* display: inline-block; */
 	padding: 10px 32px;
 	min-width: 200px;
 	margin-top: 30px;
 
-	font-weight: bold;
 	line-height: 1.87;
-	letter-spacing: 0.06em;
-
-	border-radius: 4px;
+	
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	color: var(--accent-color);
 	background-color: var(--hover-web-color);
+	
+	
 	
 }
 
@@ -726,12 +670,7 @@ header a:focus {
 	
 	
 }
-/* .team ul { 
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	 margin-top: 50px;
-} */
+
 
 .team-list {
 	padding-top: 50px;
@@ -790,6 +729,12 @@ header a:focus {
 .customers-icon {
 	fill: currentColor;
 }
+/* лого клиентов */
+.customers-item a:hover,
+.customers-item a:focus {
+	color: var(--hover-web-color);
+	
+}
 
 /*============== СТРАНИЦА ПОРТФОЛИО ===================== */
 
@@ -819,6 +764,14 @@ header a:focus {
 
 .filter li:not(:last-child) {
 	margin-right: 8px;
+}
+
+/* кнопки фильтра в портфолио */
+.filter-btn:hover,
+.filter-btn:focus {
+	background-color: var(--hover-web-color);
+	color: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ============= ФОТО РАБОТ ============== */
@@ -882,3 +835,13 @@ header a:focus {
 	width: inherit;
 	height: inherit;
 }
+
+/* фото работ в портфолио */
+.photo-work a:hover,
+.photo-work a:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+}
+.photo-work a:hover .overlay,
+.photo-work a:focus .overlay {
+	transform: translateY(0);
+} 

@@ -1,0 +1,37 @@
+.advantages {
+	padding: 94px 0;	
+	}
+
+.advantages-list {
+	
+	display: flex;
+	justify-content: center;
+
+}
+
+.advantages-list li {
+	width: 270px;
+}
+.advantages-list li:not(:last-child){
+	margin-right: 30px;
+}
+
+
+.advantages-list h3{
+	
+	color: $font-heading-color;
+	margin-bottom: 10px;
+}
+.advantages-list p {
+	line-height: 1.7;
+	color: $font-description-item-color;
+}
+.icon-advantages {
+	width: inherit;
+	height: 120px;
+	padding: 25px 0px;
+	margin-bottom: 30px;
+	background: #F5F4FA;
+	border-radius: 4px;
+	fill: #212121;
+}
