@@ -1,32 +1,25 @@
-.customers {
-	
+.customers{
 	padding: 94px 0;
-	
-}
-
-.customers-list {
-	
-	margin-top: 50px;
-}
-.customers-list>li:not(:first-child) {
-	margin-left: 30px;
-}
-.customers-item a {
-	width: 170px;
-	height: 90px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid; 
-	border-radius: 4px;
-	color: #AFB1B8;
-}
-.customers-icon {
+    &-icon  {
 	fill: currentColor;
-}
-/* лого клиентов */
-.customers-item a:hover,
-.customers-item a:focus {
-	color: $hover-web-color;
-	
-}
+            }
+    &-list  {
+	       margin-top: 50px;
+       
+           &>li:not(:first-child) {
+	       margin-left: 30px;
+                                  }
+           & a {
+	       width: 170px;
+	       height: 90px;
+	       border: 1px solid; 
+	       border-radius: 4px;
+	       color: #AFB1B8;
+               }
+
+           & a:hover,
+           & a:focus {
+	       color: $hover-web-color;
+                     }
+	        }
+     }

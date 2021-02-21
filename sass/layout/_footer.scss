@@ -1,5 +1,4 @@
-.footer-container {
-	
+.footer-container {	
 	background-color: $background-footer-hero-color;
 	padding: 60px 0px;
 }
@@ -7,8 +6,11 @@ footer {
 	line-height: 1.71;
 	font-style: $font-style;
 	$font-heading-color: white;	
-}
 
+        & li:not(:last-child){
+	    margin-bottom: 9px;
+      }
+ }
 .logo-social-title {
 	display: flex;
 	align-items: baseline;
@@ -20,10 +22,6 @@ address {
 	margin-right: 78px;
 }
 
-
-footer li:not(:last-child) {
-	margin-bottom: 9px;
-}
 .social-heading {
 	color: $accent-color;
 	margin-left: 156px;
@@ -37,13 +35,6 @@ footer li:not(:last-child) {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.social-links{
-	
-	display: flex;
-	justify-content: center;
-	text-align: center;	
-}
-
 .email-footer {
 
     width: 358px;
@@ -52,7 +43,7 @@ footer li:not(:last-child) {
 	padding: 15px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     letter-spacing: 0.03em;
     line-height: 1.25;
@@ -77,10 +68,4 @@ footer li:not(:last-child) {
 .icon-send {
 	margin-left: 10px;
 	fill: currentColor;
-}
-/* соц сети в футере */
-.social-link-footer:hover,
-.social-link-footer:focus {
-	background: #2196F3;
-	color: $accent-color;
 }

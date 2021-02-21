@@ -1,0 +1,29 @@
+%icon-size { 
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+
+}
+
+@mixin socials-list ($color-icon, $bcg-color) {
+    
+    display: flex;
+	justify-content: center;
+	text-align: center;	
+    a {
+	@extend %icon-size;
+	color: $color-icon;
+	background-color: $bcg-color;
+      }
+    
+    &>li:not(:first-child) 
+    {
+	margin-left: 10px;
+    }
+    a:hover,
+    a:focus {
+        background-color: $hover-web-color;
+        color: $accent-color;
+    }
+}
+

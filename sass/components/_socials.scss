@@ -1,31 +1,14 @@
 .icon-social {
-	height: 44px;
-	width: 44px;
+	@extend %icon-size;
 	padding: 12px 0px;
 	fill: currentColor;
-	border-radius: 50%;
-	
+}
+.socials-list-main {
+    @include socials-list(#AFB1B8, transparent);
+}
+.socials-list-footer {
+    @include socials-list($accent-color, #44454E);
 }
 
-.social-links>li:not(:first-child) {
-	margin-left: 10px;
-}
-/* social links in footer */
-.social-links a {
-	width: 44px; 
-	height: 44px; 
-	border-radius: 50%;
-	color:$accent-color;
-	background: rgba(255, 255, 255, 0.1);
-}
-/* social links in team */
-.team-item a {
-	color: #AFB1B8;
-}
 
-/* соц сети в команде */
-.team-item a:hover,  
-.team-item a:focus {
-	background-color: $hover-web-color;
-	color: $accent-color;
- }
+ 

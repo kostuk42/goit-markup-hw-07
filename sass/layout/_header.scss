@@ -15,19 +15,31 @@ header {
 	line-height: 1;
 	letter-spacing: 0.02em;
 	color: $font-heading-color;
-	
+
+      & ul {
+	  display: flex;
+      }
+      & a:hover,
+      & a:focus {
+	  color: $hover-web-color;
+                }
 
 }
-.highlighted {
-	color: $hover-web-color;
-	
+nav {
+	  margin-left: 93px;
+
+      & li:not(:first-child) {
+      margin-left: 50px;
+    }
 }
 .light-box {
     position: relative;
 	
 }
-
-.highlighted::after {
+.highlighted {
+	color: $hover-web-color;
+	
+    &::after {
 	position: absolute;
 	bottom: -34px;
 	content: "";
@@ -36,45 +48,27 @@ header {
 	height: 4px;
     background: #2196F3;
     border-radius: 2px;
+            }
 }
 
-
-nav {
-	margin-left: 93px;
-}
 .contacts-header {
-	margin-left: 305px;
-}
+	  margin-left: 305px;
 
-header ul {
-	display: flex;
-}
+      & li{
+	  display: flex;
+	  align-items: center;
+      }
 
+      & li:last-child {
+	  margin-left: 30px;
+      }
 
-nav li:not(:first-child) {
-    margin-left: 50px;
+      & a {
+	  color: $font-description-item-color;
+	  display:flex;
+	  align-items: center;
+      }
 }
-.contacts-header li{
-	display: flex;
-	align-items: center;
-}
-.contacts-header li:last-child {
-	margin-left: 30px;
-}
-
-
-.contacts {
-	color: $font-description-item-color;
-	display:flex;
-	align-items: center;
-}
-.contacts:hover,
-.contacts:focus {
-	color: $hover-web-color;
-	fill: $hover-web-color;
-}
-
-
 
 .icon-mail {
 	width: 12px;
@@ -89,7 +83,3 @@ nav li:not(:first-child) {
 	fill: currentColor;
 }
 
-header a:hover,
-header a:focus {
-	color: $hover-web-color;
-}

@@ -7,12 +7,16 @@
 	font-size: 26px;
 	line-height: 1.2;
 	color: $font-heading-color;
-}
-.logo-footer {
+
+	& span {
+	color: $hover-web-color;
+    }
+
+    &-footer {
 	display: block; 
 	padding-bottom: 20px;
     color: $accent-color;
 }
-.logo span {
-	color: $hover-web-color;
+
 }
+
